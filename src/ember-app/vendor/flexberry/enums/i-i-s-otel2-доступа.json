@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Otel2",
+  "className": "Доступа",
+  "enumObjects": {
+    "Открыт": "",
+    "Закрыт": ""
+  }
+}

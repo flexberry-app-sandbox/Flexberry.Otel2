@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Otel2",
+  "applicationTitle": "Otel2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "otel2",
+      "caption": "Otel2",
+      "title": "Otel2",
+      "children": [
+        {
+          "link": "i-i-s-otel2-авторизация-l",
+          "menuName": null,
+          "caption": "Авторизация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otel2-гости-l",
+          "menuName": null,
+          "caption": "Гости",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otel2-допуск-l",
+          "menuName": null,
+          "caption": "Допуск",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otel2-отели-l",
+          "menuName": null,
+          "caption": "Отели",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otel2-комнаты-l",
+          "menuName": null,
+          "caption": "Комнаты",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

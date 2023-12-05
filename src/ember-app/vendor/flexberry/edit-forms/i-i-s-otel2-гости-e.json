@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Авторизация",
+      "projection": "АвторизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Гости",
+  "name": "IISOtel2ГостиE",
+  "className": "ГостиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otel2-гости",
+      "modelProjection": "ГостиE"
+    }
+  ]
+}

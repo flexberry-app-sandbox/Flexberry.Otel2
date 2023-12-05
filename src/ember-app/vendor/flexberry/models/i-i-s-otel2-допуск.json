@@ -1,0 +1,162 @@
+﻿{
+  "name": "IISOtel2Допуск",
+  "modelName": "i-i-s-otel2-допуск",
+  "className": "Допуск",
+  "nameSpace": "IIS.Otel2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "допуск",
+      "type": "i-i-s-otel2-доступа",
+      "flexberryType": "Доступа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "гости",
+      "relatedTo": "i-i-s-otel2-гости",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "комнаты",
+      "relatedTo": "i-i-s-otel2-комнаты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДопускE",
+      "modelName": "i-i-s-otel2-допуск",
+      "attrs": [
+        {
+          "name": "допуск",
+          "caption": "Допуск",
+          "hidden": false,
+          "index": 9
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДопускL",
+      "modelName": "i-i-s-otel2-допуск",
+      "attrs": [
+        {
+          "name": "допуск",
+          "caption": "Допуск",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Комнаты",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Комнаты.Отели",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование",
+                  "hidden": false,
+                  "index": 0
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "отели",
+              "relatedTo": "i-i-s-otel2-отели",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "комнатаОтеля",
+              "caption": "КомнатаОтеля",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "комнаты",
+          "relatedTo": "i-i-s-otel2-комнаты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Гости",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Гости.Авторизация",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "имя",
+                  "caption": "Имя",
+                  "hidden": false,
+                  "index": 1
+                },
+                {
+                  "name": "фамилия",
+                  "caption": "Фамилия",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "авторизация",
+              "relatedTo": "i-i-s-otel2-авторизация",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "комната",
+              "caption": "Комната",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Имя",
+          "name": "гости",
+          "relatedTo": "i-i-s-otel2-гости",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

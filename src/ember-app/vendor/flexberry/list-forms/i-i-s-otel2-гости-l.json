@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otel2-гости-e",
+  "editForm": "i-i-s-otel2-гости-e",
+  "external": false,
+  "caption": "Гости",
+  "name": "IISOtel2ГостиL",
+  "className": "ГостиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otel2-гости",
+      "modelProjection": "ГостиL"
+    }
+  ]
+}

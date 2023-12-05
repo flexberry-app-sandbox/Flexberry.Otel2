@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otel2-допуск-e",
+  "editForm": "i-i-s-otel2-допуск-e",
+  "external": false,
+  "caption": "Допуск",
+  "name": "IISOtel2ДопускL",
+  "className": "ДопускL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otel2-допуск",
+      "modelProjection": "ДопускL"
+    }
+  ]
+}
